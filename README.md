@@ -49,7 +49,7 @@ To setup LeafDB local build, you can clone it using `git CLI` tool by cloning th
 ```bash
 cd path/to/project
 ```
-2. Clone the repo from github by `git CLI`:
+2. Clone the repo from github using `git CLI`:
 ```bash
 git clone https://github.com/ahmed7091/leafdb.git
 ```
@@ -66,7 +66,7 @@ cd - # Return back
 ```python
 from leafdb.leafdb import Leafdb
 
-leafdb: Leafdb = leafdb()
+leafdb: Leafdb = Leafdb()
 leafdb.set_port(PORT)
 ```
 
