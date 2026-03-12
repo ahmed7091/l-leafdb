@@ -157,7 +157,7 @@ new_data: dict = leafdb.view()
 print("New data: ", new_data) # 'New data: {"product": "Laptop", "price": 899.99, "sold": True}'
 ```
 
-<h2 id="tool">LeafDB tools</h2>
+<h2 id="tools">LeafDB tools</h2>
 
 Here is a table of the functions available in LeafDB tools to [use](#basic-usage) (naming convension changes depending on the language): 
 | name    | method | type  | usage    |
