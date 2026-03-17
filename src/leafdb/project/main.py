@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from typing import Any
-from json import loads, dumps
+from json import loads, dumps, load
 from pathlib import Path
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
@@ -27,7 +27,7 @@ class Item(BaseModel):
 
 def read_db() -> dict:
     with open(DB_PATH, "r", encoding="utf-8") as f:
-        return loads(f.read())
+        return load(f)
 
 
 def write_db(content: dict) -> None:
